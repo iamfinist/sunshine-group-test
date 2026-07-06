@@ -1,0 +1,15 @@
+{
+  "require": {
+    "php": "^8.3"
+  },
+  "require-dev": {
+    "phalcon/devtools": "^5.0@dev"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
