@@ -1,7 +1,17 @@
 <?php
 
-$router = $di->getRouter();
+use Phalcon\Mvc\Router;
 
-// Define your routes here
+$router = new Router();
 
-$router->handle($_SERVER['REQUEST_URI']);
+$router->addGet('/subscriptions', [
+    'controller' => 'subscriptions',
+    'action' => 'getSubscriptions',
+]);
+
+$router->addPost('/subscriptions/sync', [
+    'controller' => 'subscriptions',
+    'action' => 'syncSubscriptions',
+]);
+
+return $router;

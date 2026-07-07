@@ -1,3 +1,4 @@
 .phalcon
 .idea
+.env
 vendor

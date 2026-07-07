@@ -1,9 +1,14 @@
 {
   "require": {
-    "php": "^8.3"
+    "php": "^8.3",
+    "vlucas/phpdotenv": "^5.6",
+    "stripe/stripe-php": "^20.3",
+    "phalcon/migrations": "^3.0",
+    "teclaelvis/rabbitmq-phalcon-adapter": "^1.0"
   },
   "require-dev": {
-    "phalcon/devtools": "^5.0@dev"
+    "phalcon/devtools": "^5.0@dev",
+    "phalcon/ide-stubs": "^5.16"
   },
   "autoload": {
     "psr-4": {
